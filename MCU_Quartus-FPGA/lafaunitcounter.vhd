@@ -13,7 +13,7 @@ PORT
 		Clock_50	:IN	STD_LOGIC;
 			
 -- The switchs 0 through 17 on the DE2 Board	
-		SW		:IN		STD_LOGIC_VECTOR(17 DOWNTO 0);
+		SW		:IN	STD_LOGIC_VECTOR(17 DOWNTO 0);
 		
 -- The input pins on 40 pin expansion header GPIO pins
 -- (which can be used for input or output signals).
@@ -132,36 +132,36 @@ ARCHITECTURE Behavior OF lafaunitcounter IS
 	
 	
 	WITH SW(7) SELECT
-		A <= GPIO_3	  	WHEN '1',
-			'0' 	   	WHEN '0';
+		A <= GPIO_3	 WHEN '1',
+			'0' 	 WHEN '0';
 			
 	WITH SW(6) SELECT
-		B <= GPIO_7  WHEN '1',
-			'0' 	   	WHEN '0';
+		B <= GPIO_7 	 WHEN '1',
+			'0' 	 WHEN '0';
 			
 	WITH SW(5) SELECT
 		C <= GPIO_11 	WHEN '1',
-			'0' 	    	WHEN '0';
+			'0' 	WHEN '0';
 			
 	WITH SW(4) SELECT
 		D <= GPIO_15 	WHEN '1',
-			'0' 	    	WHEN '0';
+			'0' 	WHEN '0';
 			
 	WITH SW(3) SELECT
 		E <= GPIO_21 	WHEN '1',
-			'0' 	    	WHEN '0';
+			'0' 	WHEN '0';
 			
 	WITH SW(2) SELECT
 		F <= GPIO_25 	WHEN '1',
-			'0' 	   	WHEN '0';
+			'0' 	WHEN '0';
 			
 	WITH SW(1) SELECT
 		G <= GPIO_29 	WHEN '1',
-			'0' 	    	WHEN '0';
+			'0' 	WHEN '0';
 			
 	WITH SW(0) SELECT
 		H <= GPIO_33 	WHEN '1',
-			'0' 	    	WHEN '0';							
+			'0' 	WHEN '0';							
 
 	--envia valores fixos conhecidos aos sinais de contagem
 
