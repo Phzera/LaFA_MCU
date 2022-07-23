@@ -1,4 +1,4 @@
-# TCC
+# Multichannel Counting Unit - (LaFA - Limeira/SP)
 Repository to store the evolution of undergrad conclusion work
 
 # Abstract
